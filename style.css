@@ -1,0 +1,195 @@
+/* 
+
+    RESET
+
+*/
+
+body, header, main, footer {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+figure {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+
+
+
+
+
+/* 
+
+HEADER
+
+*/
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.fixed-container {
+    background-color: #B27330;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ion-icon {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.slogan-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 
+
+CARDAPIO
+
+*/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: #b2733049;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.title-wrapper {
+    grid-column: span 2;
+}
+
+.title {
+    text-align: center;
+}
+
+.coffee {
+    grid-row: span 2;
+}
+
+.wrapper {
+    border: 1px solid #2E1910;
+    padding: 15px 25px;
+}
+
+.button-wrapper {
+    grid-column: span 2;
+
+    display: grid;
+    align-items: center;
+}
+
+
+/* 
+
+FOOTER 
+
+*/
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+
+    height: 800px;
+    margin-top: 60px;
+}
+
+/* COPYRIGHT */
+.copyright {
+    grid-column: span 4;
+}
+
+/* GALLERY */
+.gallery {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-right: 0;
+    height: inherit;
+    background-color: #2e191055;
+    font-size: 0;
+
+}
+
+.gallery-img {
+    border-radius: 6px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+  padding: 0 20px 0;  
+
+}
+
+li {
+    list-style: none;
+    display: grid;
+    align-items: center;
+} 
+
+/* FORM */
+
+.form-wrapper {
+    background-color: #2E1910;
+    height: inherit;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: grid;
+    gap: 20px;
+    display: grid;
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.btn-send {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 8px;
+}
+
+.input-wrapper {
+    display: grid;
+    justify-content: center;
+}
+
+

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurora Cafe - Cardápio da Semana</title>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -12,13 +14,23 @@
             FIXED HEADER 
         
         -->
-        <img src="img/SquareLogo.svg" alt="logo">
+        <div class="fixed-container">
+
+            <img src="img/SquareLogo.svg" alt="logo" weight="50" height="50">
+
+            <ion-icon name="menu-outline"></ion-icon>
+
+        </div>
         <!-- 
 
             SLOGAN HEADER
 
          -->
-        <img src="img/MainLogo.svg" alt="logo e slogan">
+        <div class="slogan-container">
+
+            <img src="img/MainLogo.svg" alt="logo e slogan">
+
+        </div>
     </header>
     <!-- 
         
@@ -29,15 +41,18 @@
         
         <div class="container">
             
-            <h1 class="title">Cardápio da Semana</h1>
+            <div class="title-wrapper">            
+                
+                <h1 class="title">Cardápio da Semana</h1>
 
+            </div>
             <!-- 
 
                 ITEM LIST - CAFÉS
 
             -->
 
-            <div class="wrapper">
+            <div class="wrapper coffee">
             
                 <h1 class="subtitle">Cafés</h1>
                 
@@ -91,7 +106,7 @@
 
             -->
 
-            <div class="wrapper">
+            <div class="wrapper tea">
             
                 <h1 class="subtitle">Chás</h1>
                 
@@ -123,7 +138,7 @@
                 ITEM LIST - TORTAS
 
             -->
-            <div class="wrapper">
+            <div class="wrapper pie">
             
                 <h1 class="subtitle">Tortas</h1>
                 
@@ -148,8 +163,12 @@
                 BUTTON
 
             -->
-            <button type="button" class="btn-delivery">Peça Aqui</button>
 
+            <div class="button-wrapper">
+
+                <button type="button" class="btn-delivery">Peça Aqui</button>
+
+            </div>
         </div>
 
     </main>
@@ -172,7 +191,7 @@
                 <li>
 
                     <figure class="img">
-                        <img src="img/1.jpg" alt="chá">
+                        <img src="img/1.jpg" alt="chá" width="300" height="200" class="gallery-img">
                     </figure>
                 
                 </li>
@@ -180,7 +199,7 @@
                 <li>
 
                     <figure class="img">
-                        <img src="img/2.jpg" alt="torta">
+                        <img src="img/2.jpg" alt="torta" width="300" height="200" class="gallery-img">
                     </figure>
                 
                 </li>
@@ -188,7 +207,7 @@
                 <li>
 
                     <figure class="img">
-                        <img src="img/3.jpg" alt="café">
+                        <img src="img/3.jpg" alt="café" width="300" height="200" class="gallery-img">
                     </figure>
                 
                 </li>
@@ -196,7 +215,7 @@
                 <li>
 
                     <figure class="img">
-                        <img src="img/4.jpg" alt="barista">
+                        <img src="img/4.jpg" alt="barista" width="300" height="200" class="gallery-img">
                     </figure>
                 
                 </li>
@@ -204,7 +223,7 @@
                 <li>
 
                     <figure class="img">
-                        <img src="img/5.jpg" alt="torta">
+                        <img src="img/5.jpg" alt="torta" width="300" height="200" class="gallery-img">
                     </figure>
                 
                 </li>
@@ -212,7 +231,7 @@
                 <li>
 
                     <figure class="img">
-                        <img src="img/6.jpg" alt="café">
+                        <img src="img/6.jpg" alt="café" width="300" height="200" class="gallery-img">
                     </figure>
                 
                 </li>
@@ -226,19 +245,43 @@
              -->
             <div class="form-wrapper">
 
-                <h2>Comentários e Sugestões</h2>
-
                 <form action="submit" class="form">
 
-                    <input type="text" placeholder="Nome">
-                    
-                    <input type="text" placeholder="Telefone">
-                    
-                    <input type="text" placeholder="Email">
-                    
-                    <input type="text" placeholder="Mensagem">
-                    
-                    <button class="btn-send">Enviar</button>
+                    <div class="form-title-wrapper">
+
+                        <h2>Comentários e Sugestões</h2>
+    
+                    </div>
+
+                    <div class="input-wrapper">
+
+                        <input type="text" placeholder="Nome">
+                        
+                    </div>
+
+                    <div class="input-wrapper">
+
+                        <input type="text" placeholder="Telefone">
+
+                    </div>
+
+                    <div class="input-wrapper">
+
+                        <input type="text" placeholder="Email">
+
+                    </div>
+
+                    <div class="input-wrapper">
+
+                        <input type="text" placeholder="Mensagem" class="msg">
+
+                    </div>
+
+                    <div class="input-wrapper">
+
+                        <button class="btn-send">Enviar</button>
+
+                    </div>
 
                 </form>
 
@@ -261,5 +304,9 @@
 
     </footer>
     
+
+    <!-- IONIC ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
 </body>
 </html>
